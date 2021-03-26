@@ -19,4 +19,4 @@ while continue_game:
         print(f"Du gissade rätt! Du behövde {guesses} gissningar.")
         continue_game = False
 
-print("Spelet är slut!")
+print("Spelet är slut! Du vann!")
