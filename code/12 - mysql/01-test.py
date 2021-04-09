@@ -1,17 +1,8 @@
-import mysql.connector
+import matplotlib.pyplot as plt
 
-mydb = mysql.connector.connect(
-    host="remotemysql.com",  # your host, localhost for your local db
-    user="AybEFDBRkG",       # username
-    password="pbNAmdostq",   # password
-    database="AybEFDBRkG"
-)
+y = [35, 25, 25, 15]
 
-mycursor = mydb.cursor()
+mylabels = ["Apples", "Bananas", "Cherries", "Dates"]
 
-mycursor.execute("show databases")
-
-for db in mycursor:
-    print(db)
-
-# print(mydb)
+plt.pie(y, labels=mylabels, startangle=90)
+plt.show()
